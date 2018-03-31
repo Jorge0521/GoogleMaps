@@ -1,0 +1,40 @@
+<!-- <link rel="stylesheet" href="./main.css">
+
+<h1>This is reallyyyy c00l</h1>
+
+<img src="./download.jpg" alt="">
+
+<a href="./a.html">yoooooo</a> -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+       #map {
+        height: 400px;
+        width: 100%;
+       }
+    </style>
+  </head>
+  <body>
+    <h3>My Google Maps Demo</h3>
+    <div id="map"></div>
+    <script>
+      function initMap() {
+        var uluru = {lat: 25.363, lng: 131.044};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 4,
+          center: uluru
+        });
+        var marker = new google.maps.Marker({
+          position: uluru,
+          icon: 'burgar.jpg',
+          map: map
+        });
+      }
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBkYqfBo-B6yCXhml5b7Rz4bloxchYeye8&callback=initMap">
+    </script>
+  </body>
+</html>
